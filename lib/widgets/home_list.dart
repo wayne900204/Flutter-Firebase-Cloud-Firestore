@@ -2,10 +2,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_database_realtime/screens/add_user_dialog.dart';
 import 'package:flutter/material.dart';
 class HomeList extends StatelessWidget {
-  List data;
-  HomeList({@required  List data}){
-    this.data = data;
-  }
+  final List data;
+  HomeList({this.data});
   @override
   Widget build(BuildContext context) {
     return new ListView.builder(
